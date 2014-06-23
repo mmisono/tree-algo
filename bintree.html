@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Binary Tree Drawings</title>
+</head>
+<body>
+<canvas id="canvas"></canvas>
+<form action="#">
+	<label>insert :
+	<input type="text" id="input" value=0 style="width:40px" />
+	</label> 
+	<button id="insert">Insert</button>
+	<button id="reset">Reset</button> <br/>
+	<label> rad :
+	<input type="number" id="rad" value=15 style="width:40px" />
+	</label>
+	<label> y-distance :
+	<input type="number" id="distance" value=10 style="width:40px" /> <br/>
+	</label>
+	<label><input type="radio" name="func" id="draw_simple" checked /> simple</label>
+	<label><input type="radio" name="func" id="draw_left"/>left-aligned</label>
+	<label><input type="radio" name="func" id="draw_center"/>center</label>
+	<label><input type="radio" name="func" id="draw_tr"/>tilford-reingold</label> <br/>
+	<button id="sample_tree1">Sample Tree1</button>
+	<button id="sample_bin_tree1">Sample Bin Search Tree1</button>
+	<button id="sample_bin_tree2">Sample Bin Search Tree2</button>
+	<button id="sample_bin_tree3">Sample Bin Search Tree3</button>
+	<button id="sample_symmetric_tree">Sample Symmetric Tree</button>
+</form>
+<script src="./js/jquery-1.10.2.min.js"></script>
+<script src="./js/bintree.js"></script>
+</body>
+</html>
